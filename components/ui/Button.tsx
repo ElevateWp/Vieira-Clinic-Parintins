@@ -35,15 +35,15 @@ export default function Button({
 
   const variantStyles = {
     forest:
-      'bg-[#C9A64C] text-[#171717] hover:bg-[#E2C778] active:bg-[#C9A64C] shadow-sm',
+      'bg-[#168F8B] text-[#123B3B] hover:bg-[#20AAA5] active:bg-[#168F8B] shadow-sm',
     ghost:
-      'bg-transparent text-[#202020] border border-[#E5DDCB] hover:border-[#202020] hover:text-[#77736A] hover:bg-[#F7F4EC]/40',
+      'bg-transparent text-[#183C3C] border border-[#E3DDD2] hover:border-[#183C3C] hover:text-[#718080] hover:bg-[#F7F5EF]/40',
     lime:
-      'bg-[#C9A64C] text-[#171717] hover:bg-[#E2C778] active:bg-[#C9A64C] shadow-sm',
+      'bg-[#168F8B] text-[#123B3B] hover:bg-[#20AAA5] active:bg-[#168F8B] shadow-sm',
     red:
-      'bg-[#C9A64C] text-[#171717] hover:bg-[#E2C778] active:bg-[#C9A64C] shadow-sm',
+      'bg-[#168F8B] text-[#123B3B] hover:bg-[#20AAA5] active:bg-[#168F8B] shadow-sm',
     navy:
-      'bg-[#202020] text-paper hover:bg-[#202020] active:bg-[#77736A] shadow-sm',
+      'bg-[#183C3C] text-paper hover:bg-[#183C3C] active:bg-[#718080] shadow-sm',
   };
 
   const combinedClasses = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${

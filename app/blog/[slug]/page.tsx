@@ -39,7 +39,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
   const post = BLOG_POSTS.find((p) => p.slug === params.slug);
   if (!post) notFound();
 
-  const author = DENTISTS.find((d) => d.id === post.authorId) || DENTISTS[0];
+  const author = DENTISTS.find((d) => d.id === post.authorId);
   const relatedService = SERVICES.find((s) => s.slug === post.relatedServiceSlug);
   const otherPosts = BLOG_POSTS.filter((p) => p.slug !== post.slug);
 
@@ -61,8 +61,8 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     datePublished: post.publishDate,
     dateModified: post.lastUpdated,
     author: {
-      '@type': 'Person',
-      name: author?.name || 'Dr. Daniel',
+      '@type': author ? 'Person' : 'Organization',
+      name: author?.name || CLINIC_INFO.name,
     },
     publisher: {
       '@type': 'Organization',

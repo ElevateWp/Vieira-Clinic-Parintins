@@ -18,9 +18,9 @@ const service = SERVICES.find((s) => s.slug === 'cosmetic-dentistry')!;
 const leadDentist = DENTISTS.find((d) => d.id === service.assignedDentistId) || DENTISTS[0];
 
 export const metadata: Metadata = createMetadata({
-  title: 'Odontologia Estética & Facetas em Itapiranga',
+  title: 'Odontologia Estética & Facetas em Parintins',
   description:
-    'Lentes de contato dental, facetas cerâmicas e estética do sorriso pela equipe odontológica em Itapiranga.',
+    'Lentes de contato dental, facetas cerâmicas e estética do sorriso pela equipe odontológica em Parintins.',
   pathname: '/cosmetic-dentistry/',
 });
 

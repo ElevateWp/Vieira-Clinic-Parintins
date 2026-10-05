@@ -33,7 +33,7 @@ export default function BlogIndexPage() {
                 </span>
                 <WordRevealH1 text="Artigos e orientações sobre saúde bucal." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Informações claras sobre técnicas de implantes de carga imediata para recuperação do sorriso em 1 dia, odontologia domiciliar e aparelhos ortodônticos em Itapiranga.
+                  Informações claras sobre técnicas de implantes de carga imediata para recuperação do sorriso em 1 dia, odontologia domiciliar e aparelhos ortodônticos em Parintins.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -46,7 +46,7 @@ export default function BlogIndexPage() {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="divide-y divide-mist border-t border-b border-mist">
             {BLOG_POSTS.map((post, idx) => {
-              const author = DENTISTS.find((d) => d.id === post.authorId) || DENTISTS[0];
+              const author = DENTISTS.find((d) => d.id === post.authorId);
               return (
                 <AnimateOnScroll key={post.slug} animation="fade-up" delay={idx * 0.1}>
                   <article className="py-8 md:py-10 group transition-colors">

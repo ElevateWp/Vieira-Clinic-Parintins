@@ -17,9 +17,9 @@ const service = SERVICES.find((s) => s.slug === 'root-canal')!;
 const leadDentist = DENTISTS.find((d) => d.id === service.assignedDentistId) || DENTISTS[0];
 
 export const metadata: Metadata = createMetadata({
-  title: 'Tratamento de Canal em Itapiranga',
+  title: 'Tratamento de Canal em Parintins',
   description:
-    'Tratamento de canal moderno, seguro e sem dor em Itapiranga com a equipe odontológica na DentalDreams.',
+    'Tratamento de canal moderno, seguro e sem dor em Parintins com a equipe odontológica na Vieira Clinic Parintins.',
   pathname: '/root-canal/',
 });
 
